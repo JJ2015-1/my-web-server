@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>简易 Web 文件服务器</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #005f99;
+        }
+
+        .footer {
+            margin-top: 50px;
+            color: #555;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📂 我的 Web 文件服务器</h1>
+
+    <div class="container">
+        <div class="card">
+            <p>📄 具体代码</p>
+            <a href="计网实践测试文档.docx" download>点击下载</a>
+        </div>
+        <div class="card">
+            <p>🖼️ 浏览图片</p>
+            <a href="example.jpg" target="_blank">打开图片</a>
+        </div>
+        <div class="card">
+            <p>📑 查看报告</p>
+            <a href="报告.pdf" target="_blank">查看 PDF</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Powered by Python Socket Web Server | 实验演示页面
+    </div>
+    <div class="footer">
+        袁鑫语 侯思雨 蒋静
+    </div>
+
+</body>
+</html>
